@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>Webix Booking</title>
+		<meta charset="utf-8">
+		<!--Webix sources -->
+		<script type="text/javascript" src="http://cdn.webix.com/edge/webix.js"></script>
+		<link rel="stylesheet" type="text/css" href="http://cdn.webix.com/edge/webix.css">
+
+		<!--App sources -->
+		<script src="js/toolbar.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/search_form.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/datatable.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/order_form.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" href="css/index.css" type="text/css" charset="utf-8">
+    </head>
+    <body>
+			<script type="text/javascript">
+
+				webix.ready(function(){
+					
+					webix.ui({
+						rows:[
+							toolbar,
+							{
+								cells:[
+									{
+										id:"flight_search",
+										cols:[
+											search_form,
+											{
+												rows:[
+													search_bar,
+													flight_table
+												]
+											}
+										]
+									},
+									{
+										id:"flight_booking",
+										type:"clean",
+										cols:[
+											order_form, {}
+										]
+									}
+								]
+							}
+						]
+					});
+
+				});
+
+			</script>
+		</body>
+</html>

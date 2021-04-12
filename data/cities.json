@@ -1,0 +1,13 @@
+[
+	{ "id":1, "value":"London" },
+	{ "id":2, "value":"Warsaw" },
+	{ "id":3, "value":"Berlin" },
+	{ "id":4, "value":"Tallin" },
+	{ "id":5, "value":"Moscow" },
+	{ "id":6, "value":"Prague" },
+	{ "id":7, "value":"Vilnius" },
+	{ "id":8, "value":"Kiev" },
+	{ "id":9, "value":"Frankfurt" },
+	{ "id":10, "value":"Minsk" },
+	{ "id":11, "value":"Oslo" }
+]
